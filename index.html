@@ -35,12 +35,20 @@ height:150px;
 </main>
 
 <script>
-    const button = document.querySelector('button');
-    let likes = 0;
+    const buttons = document.querySelectorAll('button');
 
-    button.addEventListener('click', () => {
-        likes++;
-        button.textContent = ` 💙 ${likes}`;
+    // Botão 1: Coração escuro
+    let likesAzulEscuro = 0;
+    buttons[0].addEventListener('click', () => {
+        likesAzulEscuro++;
+        buttons[0].textContent = ` 💙 ${likesAzulEscuro}`;
+    });
+
+    // Botão 2: Coração azul claro
+    let likesAzulClaro = 0;
+    buttons[1].addEventListener('click', () => {
+        likesAzulClaro++;
+        buttons[1].textContent = ` 🩵 ${likesAzulClaro}`;
     });
 </script>
 </body>
